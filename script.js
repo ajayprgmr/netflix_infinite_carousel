@@ -36,3 +36,11 @@ slider.addEventListener('transitionend', function() {
         slider.style.transition = 'transform 0.5s ease';
     }, 50);
 });
+
+// Function to auto-scroll the slider every X milliseconds
+function autoScroll() {
+    next.click(); // Programmatically trigger the next button click
+}
+
+// Start auto-scrolling every 3 seconds (3000 milliseconds)
+setInterval(autoScroll, 1000);
