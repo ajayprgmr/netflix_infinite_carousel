@@ -23,17 +23,16 @@
     border-radius: 3px;
     position: relative;
     background-color:aliceblue;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .slider {
     display: flex;
     height:fit-content;
-    width: calc(100% * var(--total-no-sections) *100%);
+    width: calc(100vw/var(--no-of-sections-per-screen) * var(--total-no-sections));
     transition:  all .5s;
     padding: 0;
     margin: 0;
     gap:.2rem;
-
 }
 .slider section {
     flex-basis: calc(100vw/var(--no-of-sections-per-screen));
